@@ -2,6 +2,8 @@ import requests
 from telegram import Update
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 import logging
+from dotenv import load_dotenv
+import os
 from telegram.ext import Updater, CommandHandler, CallbackContext,Application
 from telegram.ext import (
     Application,
@@ -15,7 +17,10 @@ from telegram.ext import (
 )
 
 # Replace 'your_bot_token_here' with your actual Telegram bot token
-TELEGRAM_BOT_TOKEN = 'XXXXXXXXXXX'
+
+load_dotenv()
+# print(os.environ['BOT_TOKEN'])
+TELEGRAM_BOT_TOKEN = os.environ['BOT_TOKEN']
 # Replace 'http://yourdomain.com/your-app-name/api/albums/' with your actual DRF API endpoint
 DRF_API_URL = 'http://127.0.0.1:8000/api/albums/'
 
