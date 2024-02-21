@@ -15,7 +15,7 @@ from telegram.ext import (
 )
 
 # Replace 'your_bot_token_here' with your actual Telegram bot token
-TELEGRAM_BOT_TOKEN = '6990612590:AAHDdIF97AcwOa3-ueWTQmQhHeZ2EituXGI'
+TELEGRAM_BOT_TOKEN = 'XXXXXXXXXXX'
 # Replace 'http://yourdomain.com/your-app-name/api/albums/' with your actual DRF API endpoint
 DRF_API_URL = 'http://127.0.0.1:8000/api/albums/'
 
