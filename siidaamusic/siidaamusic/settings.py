@@ -31,6 +31,11 @@ ALLOWED_HOSTS = []
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 CHANNEL_TYPE_VALUE = 0
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 
 # 0-Keep original, 8000-8000Hz, 16000-16000Hz, 22050-22050Hz,
 # 44100-44100Hz, 48000-48000Hz, 96000-96000Hz
